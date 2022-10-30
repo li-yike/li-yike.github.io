@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <!--<link rel="shortcut icon" href="img/homeicon.png"> -->
 
-    <title>Yunzhe Tian's Homepage</title>
+    <title>YIKE LI's Homepage</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
           </button>
           <!-- <img height="50" src="img/sheep2.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px"> -->
-          <a class="navbar-brand" href="#">Yunzhe Tian(田蕴哲)</a>
+          <a class="navbar-brand" href="#">Yike Li (李轶珂)</a>
         </div>
         <div class="navbar-collapse collapse">
         <ul class="nav nav-pills pull-right">
@@ -67,13 +67,16 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <img height="200" src="img/tianyunzhe.jpg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px;">
+        <img height="200" src="img/liyike.jpg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px;">
         <p></p>
-        <p> I am a first-year graduate student at Beijing Jiaotong University, advised by <a href="http://faculty.bjtu.edu.cn/9120/">Prof. Wenjia Niu</a> in <a href="http://infosec.bjtu.edu.cn/">Department of Information Security</a>, <a href="http://computer.bjtu.edu.cn/"> School of Computer Science and Information Technology</a>.
+        
+        <p>I am currently a Ph.D. candidate of Cyberspace Security in Beijing Jiaotong University, advised by <a href="http://faculty.bjtu.edu.cn/9120/">Prof. Wenjia Niu </a> and <a href="http://faculty.bjtu.edu.cn/9306/"> Prof. Endong Tong </a> in Beijing Key Laboratory of Security and Privacy in Intelligent Transportation.
         </p>
-		<p>I obtained my bachelor degree at Beijing Information Science & Technology University in 2020. And, I fortunately have been visiting Tsinghua University (co-advised by <a href="http://keg.cs.tsinghua.edu.cn/persons/ljz/">Prof. Juanzi Li</a> and Dr. Peng Zhang) from Nov, 2018 to June, 2020. During my time at Tsinghua, I completed my undergraduate thesis "Research on News Entity Open Relation Extraction", awarded Excellent Undergraduate Thesis of Beijing City. </p>
-        <p>My research interests lie in <b> AI security </b> including adversarial attack and robust learning for deep neural network, graph neural network and reinforcement learning. Here is my <a href="works/CV/CV_Yunzhe Tian.pdf"> CV </a>.</p>
-        <p> <b> Email:</b> tianyunzhe {at} bjtu [dot] edu [dot] cn </p>
+        
+<p>My research interests lie in (1) AI security including robust and privacy-preserving reinforcement learning, and (2) Intelligent Transportation security including adversarial attack and defense in Intelligent Signal System.</p>
+<p>For more detailed personal information, please refer to my <a href="works/CV/CV_yikeli.pdf"> CV</a>.</p>
+        
+        <p> <b> Email:</b> yikeli {at} bjtu [dot] edu [dot] cn </p>
 
       </div>
     </div>
@@ -84,39 +87,58 @@
         <div class="page-header">
             <h2>Selected Research Work</h2>
         </div>
-      
+
         <div class="page-header">
-            <h4>Robust Graph Neural Network</h4>
+            <h4>Curricular Robust Reinforcement Learning</h4>
         </div>
-        <img width="450" src="works/parallel attack with title.png" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px" >
-      
+        <img width="450" src="works/TST.png" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px" >
+
         <p>
-          Network data such as socialnet, becomes an important component in real life, drawing a lot of study issues of security and safety. Recently, adversarial attacks on GNN (Graph Neural Network) are exposed. By generating unnoticeable adversarial perturbations targeting the node's features and the graph structure, the performance of GNN is greatly dropped on graph-related tasks such as node classification, link prediction and community detection.<br><br>
-          
-          Existing automatic attack methods are developed for per-node attacks, which can only be utilized for multi-node attacks in a sequential way. However, due to the overlook of perturbation influence between different per-node attacks, existing sequential method does not guarantee a global attack success rate for all target nodes, under a fixed budget of perturbation. Motivated by this, we propose a parallel adversarial attack framework on node classification (<a href="https://downloads.hindawi.com/journals/scn/2021/6631247.pdf">Tian et al, SCN'21</a>). Firstly, based on FGA and NETTACK, we redesign new loss function and objective function aimed at multi-target parallel adversarial attack, and propose node filtering-based P-FGA and P-NETTACK. Then, through constructing intersection and supplement mechanisms of perturbations, we integrate P-FGA and P-NETTACK in a unified framework, finally realizing effective parallel adversarial attacks.<br><br>
-          
-          
+        
+        Reinforcement learning (RL), one of three branches of machine learning, aims for autonomous learning and is now greatly driving the artificial intelligence development, especially in autonomous distributed systems, such as cooperative Boston Dynamics robots. However, robust RL has been a challenging problem of reliable aspects due to the gap between laboratory simulation and real world. Existing efforts have been made to approach this problem, such as performing random environmental perturbations in the learning process. However, one cannot guarantee to train with a positive perturbation as bad ones might bring failures to RL.
+         </p>
+         <p>
+        Motivated by this, we treat robust RL as a multi-task RL problem, and propose a curricular robust RL approach (<a href="https://ieeexplore.ieee.org/abstract/document/9837021">Li et al, TST'22</a> and <a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23011_paper.pdf"> Tian et al, AutoSec'21</a>). We first present a generative adversarial network (GAN) based task generation model to iteratively output new tasks at the appropriate level of difficulty for the current policy. Furthermore, with these progressive tasks, we can realize curricular learning and finally obtain a robust policy. Extensive experiments in multiple environments demonstrate that our method (a) improves the training stability and (b) is robust to differences in training/test conditions.
+         </p>
+<br><br>
+
+
          </p>
     </div>
 
     <div class="container">
         <div class="page-header">
-            <h4>Robust Reinforcement Learning</h4>
+            <h4>Security Analysis for Intelligent Transportation</h4>
         </div>
-        <img width="450" src="works/CarRacing_with_title.png" align="left" style="margin-left:20px;margin-right:20px">
-        <p> Due to the gap between lab simulation and real world, robust reinforcement learning has been a challenging problem. Existing efforts approached this problem through performing random environmental perturbation in learning process. However, one cannot guarantee perturbation is positive. Bad ones might bright failures to reinforcement learning. </p>
-		<p>In our recent work, we treat robust reinforcement learning as a multi-task reinforcement learning problem, and propose a curricular robust reinforcement learning approach (<a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23011_paper.pdf">Tian et al, AutoSec'21</a>). We first present a GAN-based task generation model to iteratively output new tasks at the appropriate level of difficulty for the current policy. Further, with these progressive tasks, we can realize curricular learning and finally get a robust policy. </p>
-		<p>Demo we implemented in unmanned CarRacing game validates the effectiveness. And we also demonstrate our method in multiple environments of OpenAI toolkits with MuJoCo physics simulator, such as Hopper, HalfCheetah and InvertedPendulum. </p>
+        <img width="450" src="works/WCMC.png" align="left" style="margin-left:20px;margin-right:20px">
+        
+        <p>
+        With the development of emerging intelligent traffic signal (I-SIG) system, congestion-involved security issues are drawing attentions of researchers and developers on the vulnerability introduced by connected vehicle technology, which empowers vehicles to communicate with the surrounding environment such as roadside infrastructure and traffic control units. A congestion attack to the controlled optimization of phases algorithm (COP) of I-SIG is recently revealed. Unfortunately, such analysis still lacks a timely visualized prediction on later congestion when launching an initial attack. 
+        </p>
+        <p>
+        In this paper (<a href="https://doi.org/10.1155/2020/8823300">Li et al, WCMC'20</a>), we argue that traffic image feature-based learning has available knowledge to reflect the relation between attack and caused congestion, and propose a novel analysis framework based on cycle generative adversarial network (CycleGAN). Based on phase order, we first extract four-direction road images of one intersection and perform phase-based composition for generating new sample image of training. We then design a weighted L1 regularization loss that considers both last-vehicle attack and first-vehicle attack, to improve the training of CycleGAN with two generators and two discriminators. Experiments on simulated traffic flow data from VISSIM platform shows the effectiveness of our approach.
+        </p>
+        
     </div>
 
 	<div class="container">
         <div class="page-header">
-            <h4>Adversarial Examples Generation</h4>
+            <h4>Multi-agent Reinforcement Learning for Intelligent Transportation</h4>
         </div>
-        <img width="450" src="works/constraints.png" align="left" style="margin-left:20px;margin-right:20px">
-        <p> Adversarial example, an input that is modified slightly to cause a machine learning system to produce erroneous outputs, has seen significant studies recently.</p>
-		<p> Unfortunately, the fine data perturbation of adversarial examples ignores to keep potential data correlations between feature pairs. Thus, such adversarial examples will be easily filtered by configuring data correlations as basic filtering rules.</p>
-		<p>We propose an advanced robust adversarial example generation attack, avoiding not to be filtered as well as causing false classification (<a href="https://ieeexplore.ieee.org/document/9359196">Tian et al, ICPADS'20</a>). We first define four basic data correlations called strict linear constraint, approximate linear constraint, addition boundary constraint and zero multiplication constraint. Then, based on embedding multiple data correlations into one constraint matrix from the Pearson analysis, our approach can enable a Hadamard product of the constraint matrix and the sign of gradient matrix to craft perturbations, keeping consistent data correlations. Experimental results on intrusion detection system demonstrate the superiority of our constraint-based adversarial example generation, especially in terms of keeping data constraints. </p>
+        <img width="450" src="works/TGCN-1.png" align="left" style="margin-left:20px;margin-right:20px">
+        
+        <p>
+        Inefficient signal control will not only exaggerate traffic congestion, but also increase the fuel consumption and
+exhaust emissions. Thus, signal planning is highly important in green transportation. As the Connected vehicle (CV) technology
+has transformed today’s transportation systems by connecting vehicles and the transportation infrastructure through wireless
+communication, the CV-based signal control system has seen significant studies recently. Unfortunately, existing signal planning
+algorithms in use are developed for the signal-intersection, showing low traffic efficiency in the multi-intersection collaborative
+planning due to ignoring the traffic correlation among the neighboring intersections. 
+</p>
+<p>
+In recent work (<a href="https://ieeexplore.ieee.org/document/9743567">Li et al, TGCN'22</a>), we target the USDOT (U.S. Department of Transportation) sponsored CVbased traffic control system, and implement a multi-intersection traffic network. We model the multi-intersection collaborative signal planning problem as a multi-agent reinforcement learning problem, and present an actor-attention-critic algorithm to improve transportation efficiency and energy efficiency in green transportation, as well as resist congestion attack. Experiment results on the multi-intersection traffic network indicates that 1) compared to the baseline, our approach reduces the total delay by as high as 44.24%; 2) our method transports more vehicles passing the intersections meanwhile reduces the total CO2 emissions by 2.40%; 3) under the congestion attack, our approach shows robustness and reduces the total delay by as high as 64.33%.
+        </p>
+        
     </div>
 <br>
 
@@ -126,40 +148,61 @@
         <div class="page-header">
             <h2>Publication List</h2>
         </div>
-        <li style="margin:10px"><b>Yunzhe Tian</b>, Yike Li, Yingxiao Xiang, Wenjia Niu, Endong Tong, and Jiqiang Liu. Curricular Reinforcement Learning for Robust Policy in Unmanned CarRacing Game. In <i>NDSS 2021, Workshop on Automotive and Autonomous Vehicle Security (AutoSec)</i>.
-        </li>
-      
-        <li style="margin:10px"><b>Yunzhe Tian</b>, Jiqiang Liu, Endong Tong, Wenjia Niu, Liang Chang, Qi Alfred Chen, Gang Li, and Wei Wang. Towards Revealing Parallel Adversarial Attack on Politician Socialnet of Graph Structure. In <i> Security and Communication Networks (SCN), 2021 </i>.
-        </li>
-
-        <li style="margin:10px">Endong Tong, Wenjia Niu, <b>Yunzhe Tian</b>, Jiqiang Liu, Thar Baker, Sandeep Verma, and Zheli Liu. A Hierarchical Energy-efficient Service Selection Approach with Qos Constraints for Internet of Things. In <i> IEEE Transactions on Green Communications and Networking (TGCN), 2021</i>.
-        </li>
-
-		<li style="margin:10px">Yike Li, <b>Yunzhe Tian</b>, Endong Tong, Wenjia Niu, Yingxiao Xiang, Tong Chen, Yalun Wu and Jiqiang Liu. Curricular Robust Reinforcement Learning via GAN-based Perturbation through Continuously-scheduled Task Sequence. In <i> The 14th Chinese Conference on Trusted Computing and Information Security (CTCIS 2021), 2021</i>.
-        </li>
-
-
-		<li style="margin:10px">
-		Yalun Wu, Minglu Song, Yike Li, <b>Yunzhe Tian</b>, Endong Tong, Wenjia Niu, Bowei Jia, Haixiang Huang, Qiong Li and Jiqiang Liu. Improving Convolutional Neural Network-based Webshell Detection through Reinforcement Learning. In <i>The 23rd International Conference on Information and Communications Security (ICICS 2021), 2021</i>.
-		</li>
-		<li style="margin:10px">
-		Tong Chen, Yingxiao Xiang, Yike Li, <b>Yunzhe Tian</b>, Endong Tong, Wenjia Niu, Jiqiang Liu, Li Gang and Qi Alfred Chen. Protecting Reward Function of Reinforcement Learning via Minimal and Non-catastrophic Adversarial Trajectory. In <i>The 40th International Symposium on Reliable Distributed Systems (SRDS 2021), 2021</i>.
-		</li>
+        
         <li style="margin:10px">
-		王硕汝, 牛温佳, 童恩栋, 陈彤, 李赫, <b>田蕴哲</b>, 刘吉强, 韩臻, 李浥东. 强化学习离线策略评估研究综述. <i>计算机学报, 2021</i>.
-		</li>
-        <li style="margin:10px">Xinyu Huang, <b>Yunzhe Tian</b>, Yifei He, Endong Tong, Wenjia Niu, Chenyang Li, Jiqiang Liu, and Liang Chang. Exposing Spoofing Attack on Flocking-based Unmanned Aerial Vehicle Cluster: A Threat to Swarm Intelligence. In <i>Security and Communication Networks (SCN), 2020</i>.
+        <b>Yike Li</b>, Wenjia Niu, Yunzhe Tian, Tong Chen, Zhiqiang Xie, Yalun Wu, Yingxiao Xiang, Endong Tong, Thar Baker, and Jiqiang Liu.
+Multiagent Reinforcement Learning-Based Signal Planning for Resisting Congestion Attack in Green Transportation.
+In <i>IEEE Transactions on Green Communications and Networking (TGCN), 2022</i>.
         </li>
-      
-        <li style="margin:10px">Bowei Jia, <b>Yunzhe Tian</b>, Di Zhao, Xiaojin	Wang, Chenyang Li, Wenjia Niu, Endong Tong,	and Jiqiang Liu. Bidirectional Rnn-based Few-shot Training for Detecting Multi-stage Attack. In <i>The 16th International Conference on Information Security and Cryptology (INSCRYPT 2020), 2020 </i>.
+
+        <li style="margin:10px">
+<b>Yike Li</b>, Yunzhe Tian, Endong Tong, Wenjia Niu, Yingxiao Xiang, Tong Chen, Yalun Wu, and Jiqiang Liu.
+Curricular Robust Reinforcement Learning via GAN-Based Perturbation Through Continuously Scheduled Task Sequence.
+In <i>TSINGHUA Science and Technology (TST), 2022</i>.
+</li>
+
+
+        <li style="margin:10px">
+<b>Yike Li</b>, Yingxiao Xiang, Endong Tong, Wenjia Niu, Bowei Jia, Long Li, Jiqiang Liu, and Zhen Han.
+An Empirical Study on GAN-Based Traffic Congestion Attack Analysis: A Visualized Method.
+In <i>Wireless Communications and Mobile Computing (WCMC), 2020</i>.
         </li>
-      
-        <li style="margin:10px"><b>Yunzhe Tian</b>, Yingdi Wang, Endong Tong, Wenjia Niu, Liang Chang, Qi Alfred Chen, Gang Li, and Jiqiang Liu. Exploring Data Correlation	between Feature Pairs for Generating Constraint-based Adversarial Examples. In <i>IEEE 26th International Conference on Parallel and Distributed Systems (ICPADS 2020), 2020. </i>
+        <li style="margin:10px">
+Yunzhe Tian, <b>Yike Li</b>, Yingxiao Xiang,
+	Wenjia Niu, Endong Tong, and Jiqiang Liu. Curricular Reinforcement Learning for Robust Policy in Unmanned
+	CarRacing Game. In <i>NDSS 2021, Workshop
+on Automotive and Autonomous Vehicle Security (AutoSec)</i>.
+
         </li>
- 
-        <li style="margin:10px">Qinghua Wen, <b>Yunzhe Tian</b>, Xiaohui Zhang, Ruoyun Hu, Jinsong Wang, Lei Hou, and Juanzi Li. Type-aware Open Information Extraction	via Graph Augmentation Model. In <i> China Conference on Knowledge Graph and Semantic Computing (CCKS 2020), 2020 </i>.
+        <li style="margin:10px">
+相迎宵,<b>李轶珂</b>,刘吉强,王潇瑾,陈彤,童恩栋,牛温佳,韩臻. 面向降频污染攻击的智能交通拥堵态势量化分析. <i>软件学报, 2021</i>.
         </li>
-      
+        
+
+        <li style="margin:10px">
+Tong Chen, Yingxiao Xiang,<b>Yike Li</b>, Yunzhe Tian, Endong Tong, Wenjia Niu, Jiqiang Liu, Li Gang
+and Qi Alfred Chen. Protecting Reward Function of Reinforcement Learning via Minimal and
+Non-catastrophic Adversarial Trajectory. In <i>the 40th International Symposium on Reliable Distributed
+Systems (SRDS 2021), 2021</i>.
+        </li>
+        <li style="margin:10px">
+Yalun Wu, Minglu Song, <b>Yike Li</b>, Yunzhe Tian, Endong Tong, Wenjia Niu, Bowei Jia, Haixiang
+Huang, Qiong Li and Jiqiang Liu. Improving Convolutional Neural Network-based Webshell Detection
+through Reinforcement Learning. In <i>the 23rd International Conference on Information and
+Communications Security (ICICS 2021), 2021</i>.
+        </li>
+        <li style="margin:10px">
+Zhiqiang Xie, Yingxiao Xiang, <b>Yike Li</b>, Shuang Zhao, Endong Tong, Wenjia Niu, Jiqiang Liu, and Jian Wang.
+Security Analysis of Poisoning Attacks Against Multi-agent Reinforcement Learning. In <i>the 21st International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP 2021), 2021</i>.
+        </li>
+        <li style="margin:10px">
+Xu Gao, Jiqiang Liu, <b>Yike Li</b>, Xiaojin Wang, Yingxiao Xiang, Endong Tong, Wenjia Niu, and Zhen Han.
+Queue Length Estimation Based Defence Against Data Poisoning Attack for Traffic Signal Control. In <i>the 10th International Conference on Intelligent Information Processing (IIP 2020), 2020</i>.
+        </li>
+        
+        
+        
+
 
     </div>
     <a name="activities"></a>
@@ -171,16 +214,9 @@
             <h2>Academic Experience</h2>
         </div>
         <li style="margin:10px">
-        Oral Presentation in AutoSec Workshop @ NDSS’21 (remote presentation)
-        </li>
-      
-        <li style="margin:10px">
-        Oral Presentation in Inscrypt 2020, Guangzhou, China
+        Oral Presentation in <b>CTCIS 2021</b>, Baoding, China (remote presentation)
         </li>
 
-		<li style="margin:10px">
-        Oral Presentation in ICPADS 2020, Hong Kong, China (remote presentation)
-        </li>
     </div>
 
     </div>
@@ -190,23 +226,18 @@
         <div class="page-header">
             <h2>Selected Awards</h2>
         </div>
+        
+
         <li style="margin:10px">
-        2020, Excellent Undergraduate of Beijing City
-        <li style="margin:10px">
-        2020, Excellent Undergraduate Thesis of Beijing City
-        </li>
-        <li style="margin:10px">
-        2020, Excellent Undergraduate of Beijing Information Science & Technology University
-        </li>
-        <li style="margin:10px">
-        2020, Excellent Undergraduate Thesis of Beijing Information Science & Technology University
-        </li>
-        <li style="margin:10px">
-        2019, National Scholarship of China
-        </li>
-        <li style="margin:10px">
-        2019, President Scholarship of Beijing Information Science & Technology University
-        </li>
+        2022,  <b>First Prize</b> of The Vulnerability Mining Competition for
+    Olympic Winter Games Beijing 2022 (Coverage:<a href="http://scit.bjtu.edu.cn/cms/item/4906.html">计算机学院信安团队参与冬奥卫士演练活动荣获一等奖</a>)
+</li>
+                <li style="margin:10px">
+        2020,  <b>Second Prize</b> of The 17th China Post-Graduate Mathematical Contest in Modeling (Huawei Cup)
+</li>
+               <li style="margin:10px">
+        2017,  <b>Second Prize</b> of The 3th “Internet+” Innovation and Entrepreneurship Competition
+</li>
     </div>
 
     <hr>
@@ -220,23 +251,23 @@
         </div>
                 <div class="col-xs-12 col-md-8">
                     <ul class="fa-ul">
-                        
+
                         <li>
                             <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
                             <span>
-                                <a href="mailto:tianyunzhe@bjtu.edu.cn">tianyunzhe@bjtu.edu.cn</a></span>
+                                <a href="mailto:yikeli@bjtu.edu.cn">yikeli@bjtu.edu.cn</a></span>
                         </li>
                     </ul>
                 </div>
     </div>
-<!-- 
+<!--
     <div style="width: 33%; text-align: center; margin: 0 auto;">
         <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=tebCSlmqux9N9QrcNmOiT0PXzoscPYQd7ftMh0JTTv0&amp;cl=ffffff&amp;w=a"></script>
     </div>
     <hr> -->
 
     <footer>
-        <p style="margin:10px;">Created by <a href=""> Yunzhe Tian </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
+        <p style="margin:10px;">Created by <a href=""> Yike Li </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
     </footer>
     </div> <!-- /container
 
