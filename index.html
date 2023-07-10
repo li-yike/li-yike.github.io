@@ -76,7 +76,7 @@
 <p>My research interests lie in (1) AI security including robust and privacy-preserving reinforcement learning, and (2) Intelligent Transportation security including adversarial attack and defense in Intelligent Signal System.</p>
 <p>For more detailed personal information, please refer to my <a href="works/CV/CV_yikeli.pdf"> CV</a>.</p>
         
-        <p> <b> Email:</b> yikeli {at} bjtu [dot] edu [dot] cn </p>
+        <p> <b> Email:</b> yikeli@bjtu.edu.cn </p>
 
       </div>
     </div>
@@ -89,16 +89,16 @@
         </div>
 
         <div class="page-header">
-            <h4>Curricular Robust Reinforcement Learning</h4>
+            <h4>Robust Reinforcement Learning via Progressive Task Sequence</h4>
         </div>
-        <img width="450" src="works/TST.png" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px" >
+        <img width="450" src="works/IJCAI.png" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px" >
 
         <p>
         
-        Reinforcement learning (RL), one of three branches of machine learning, aims for autonomous learning and is now greatly driving the artificial intelligence development, especially in autonomous distributed systems, such as cooperative Boston Dynamics robots. However, robust RL has been a challenging problem of reliable aspects due to the gap between laboratory simulation and real world. Existing efforts have been made to approach this problem, such as performing random environmental perturbations in the learning process. However, one cannot guarantee to train with a positive perturbation as bad ones might bring failures to RL.
+        Reinforcement learning (RL), aims for autonomous learning and is now greatly driving the artificial intelligence development, especially in autonomous distributed systems, such as cooperative Boston Dynamics robots. However, robust RL has been a challenging problem in reliable aspects due to the gap between laboratory simulation and real world. Existing efforts typically address the robust RL problem by solving a maxmin problem, which maximizes the cumulative reward under the worst-possible perturbations. However, the worst-case formulation either leads to overly conservative solutions or unstable training process, which further affects the policy robustness.
          </p>
          <p>
-        Motivated by this, we treat robust RL as a multi-task RL problem, and propose a curricular robust RL approach (<a href="https://ieeexplore.ieee.org/abstract/document/9837021">Li et al, TST'22</a> and <a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23011_paper.pdf"> Tian et al, AutoSec'21</a>). We first present a generative adversarial network (GAN) based task generation model to iteratively output new tasks at the appropriate level of difficulty for the current policy. Furthermore, with these progressive tasks, we can realize curricular learning and finally obtain a robust policy. Extensive experiments in multiple environments demonstrate that our method (a) improves the training stability and (b) is robust to differences in training/test conditions.
+        Motivated by this, we first formulate the robust RL as a max-expectation optimization problem, aiming to find an optimal policy under both the worst cases and the non-worst cases. Then, we propose a novel framework DRRL (to appear in IJCAI'23) to solve the max-expectation optimization problem, in which a task generation and sequencing mechanism is introduced to iteratively output new tasks at the appropriate level of difficulty for the current policy. With these progressive tasks, we realize multi-task learning to improve policy robustness and training stability. Extensive experiments in multiple environments demonstrate that our method (a) improves the training stability and (b) is robust to differences in training/test conditions.
          </p>
 <br><br>
 
@@ -148,7 +148,13 @@ In recent work (<a href="https://ieeexplore.ieee.org/document/9743567">Li et al,
         <div class="page-header">
             <h2>Publication List</h2>
         </div>
-        
+
+        <li style="margin:10px">
+        <b>Yike Li</b>, Yunzhe Tian, Endong Tong, Wenjia Niu and Jiqiang Liu.
+Robust Reinforcement Learning via Progressive Task Sequence.
+In <i>International Joint Conference on Artificial Intelligence (IJCAI), 2023 (To appear)</i>.
+        </li>
+	    
         <li style="margin:10px">
         <b>Yike Li</b>, Wenjia Niu, Yunzhe Tian, Tong Chen, Zhiqiang Xie, Yalun Wu, Yingxiao Xiang, Endong Tong, Thar Baker, and Jiqiang Liu.
 Multiagent Reinforcement Learning-Based Signal Planning for Resisting Congestion Attack in Green Transportation.
@@ -192,17 +198,12 @@ through Reinforcement Learning. In <i>the 23rd International Conference on Infor
 Communications Security (ICICS 2021), 2021</i>.
         </li>
         <li style="margin:10px">
-Zhiqiang Xie, Yingxiao Xiang, <b>Yike Li</b>, Shuang Zhao, Endong Tong, Wenjia Niu, Jiqiang Liu, and Jian Wang.
-Security Analysis of Poisoning Attacks Against Multi-agent Reinforcement Learning. In <i>the 21st International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP 2021), 2021</i>.
-        </li>
-        <li style="margin:10px">
 Xu Gao, Jiqiang Liu, <b>Yike Li</b>, Xiaojin Wang, Yingxiao Xiang, Endong Tong, Wenjia Niu, and Zhen Han.
 Queue Length Estimation Based Defence Against Data Poisoning Attack for Traffic Signal Control. In <i>the 10th International Conference on Intelligent Information Processing (IIP 2020), 2020</i>.
         </li>
         
         
         
-
 
     </div>
     <a name="activities"></a>
