@@ -98,13 +98,13 @@
         Robust reinforcement learning (RL) has been a challenging problem in reliable aspects due to the gap between laboratory simulation and real world. Existing efforts typically address the robust RL problem by solving a maxmin problem, which maximizes the cumulative reward under the worst-possible perturbations. However, the worst-case formulation either leads to overly conservative solutions or unstable training process, which further affects the policy robustness.
          </p>
          <p>
-        Motivated by this, we tackle this problem from both formulation definition and algorithm design. First, we formulate the robust RL as a max-expectation optimization problem, with the goal of finding an optimal policy under both the worst cases and the non-worst cases. Then, we propose a novel framework DRRL (to appear in IJCAI'23) to solve the max-expectation optimization problem, in which a task generation and sequencing mechanism is introduced to iteratively output new tasks at the appropriate level of difficulty for the current policy. With these progressive tasks, we realize multi-task learning to improve policy robustness and training stability. Extensive experiments in multiple environments demonstrate that our method (a) improves the training stability and (b) is robust to differences in training/test conditions.
+        Motivated by this, we tackle this problem from both formulation definition and algorithm design. First, we formulate the robust RL as a max-expectation optimization problem, with the goal of finding an optimal policy under both the worst cases and the non-worst cases. Then, we propose a novel framework DRRL (to appear in IJCAI'23) to solve the max-expectation optimization problem, in which a task generation and sequencing mechanism is introduced to iteratively output new tasks at the appropriate level of difficulty for the current policy. With these progressive tasks, we realize multi-task learning to improve policy robustness and training stability. Extensive experiments demonstrate that DRRL exhibits significant performance on the unmanned CarRacing game and multiple high-dimensional MuJoCo environments.
          </p>
 <br><br>
 
 
          </p>
-    </div>
+
 
     <div class="container">
         <div class="page-header">
@@ -139,6 +139,7 @@ planning due to ignoring the traffic correlation among the neighboring intersect
 In recent work (<a href="https://ieeexplore.ieee.org/document/9743567">Li et al, TGCN'22</a>), we target the USDOT (U.S. Department of Transportation) sponsored CVbased traffic control system, and implement a multi-intersection traffic network. We model the multi-intersection collaborative signal planning problem as a multi-agent reinforcement learning problem, and present an actor-attention-critic algorithm to improve transportation efficiency and energy efficiency in green transportation, as well as resist congestion attack. Experiment results on the multi-intersection traffic network indicates that 1) compared to the baseline, our approach reduces the total delay by as high as 44.24%; 2) our method transports more vehicles passing the intersections meanwhile reduces the total CO2 emissions by 2.40%; 3) under the congestion attack, our approach shows robustness and reduces the total delay by as high as 64.33%.
         </p>
         
+    </div>
     </div>
 <br>
 
